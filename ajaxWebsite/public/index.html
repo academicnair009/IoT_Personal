@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" language="javascript" src="Ajax.js"></script>
+  <script type="text/javascript" language="javascript" src="ArgonStatus.js"></script>
+  <style>
+  .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+.button1 {background-color: #4CAF50;} /* Green */
+</style>
+
+</head>
+<body>
+<button onClick="getStatus()" class="button button1">Get Device Update</button>
+<div>
+  <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Argon Status using AJAX</h2>
+  <table>
+    <thead>
+      <th>Device ID</th>
+      <th>Last Visit</th>
+      <th>Device working</th>
+    </thead>
+    <tbody>
+      <tr>
+      <td>
+        <div id = "deviceID"></div>
+      </td>
+      <td>
+        <div id = "lastVisit"></div>
+      </td>
+      <td>
+        <div id = "onTime"></div>
+      </td>
+      </tr>
+    </tbody>
+  </table>
+  <script>getStatus()</script>
+</body>
+</html>
+
